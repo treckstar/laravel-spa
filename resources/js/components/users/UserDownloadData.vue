@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import { mapState, mapActions } from 'vuex';
-import { track } from '@services/analytics';
+import '@services/analytics';
 import axios from 'axios';
 
 export default {

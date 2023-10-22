@@ -47,7 +47,7 @@
 
 <script>
 import { UserIcon, KeyIcon, CogIcon } from '@heroicons/vue/24/outline';
-import { track } from '@services/analytics';
+import '@services/analytics';
 
 export default {
   components: {

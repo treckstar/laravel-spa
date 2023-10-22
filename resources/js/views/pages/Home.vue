@@ -2,7 +2,7 @@
   <div class="rounded-lg p-12 text-center">
     <div class="mb-5 flex items-center justify-between">
       <ChatBubbleLeftEllipsisIcon
-        class="r-2 flex h-20 w-20 w-0 flex-1 justify-start text-indigo-400 dark:text-indigo-200"
+        class="r-2 flex h-20 w-0 w-20 flex-1 justify-start text-indigo-400 dark:text-indigo-200"
       />
     </div>
     <h1 class="mb-5 text-4xl font-medium text-slate-700 dark:text-slate-100">

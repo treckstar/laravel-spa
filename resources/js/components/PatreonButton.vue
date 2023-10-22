@@ -2,7 +2,7 @@
   <AppButton
     text="Buy me a coffee"
     type="button"
-    class="bmc-button inline-block rounded-lg bg-red-500 pl-5 pr-6 pt-4 pb-4 shadow-lg hover:bg-red-600 hover:shadow-none"
+    class="bmc-button inline-block rounded-lg bg-red-500 pb-4 pl-5 pr-6 pt-4 shadow-lg hover:bg-red-600 hover:shadow-none"
     @click.prevent="openLink"
   >
     <template #text>
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { track } from '@services/analytics';
+import '@services/analytics';
 
 export default {
   name: 'BmcButtons',

@@ -4,7 +4,7 @@
       v-if="showModal"
       class="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
     >
-      <div class="relative my-6 mx-auto w-auto" :class="modalWidthClass">
+      <div class="relative mx-auto my-6 w-auto" :class="modalWidthClass">
         <div
           class="relative flex w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none dark:bg-slate-600"
         >
@@ -32,14 +32,14 @@
             class="flex items-center justify-end rounded-b border-t border-solid border-slate-200 p-6"
           >
             <button
-              class="mr-1 mb-1 rounded border border-solid border-red-500 bg-transparent px-6 py-3 text-sm font-bold uppercase text-red-500 outline-none transition-all duration-150 ease-linear hover:bg-red-500 hover:text-white focus:outline-none active:bg-red-600"
+              class="mb-1 mr-1 rounded border border-solid border-red-500 bg-transparent px-6 py-3 text-sm font-bold uppercase text-red-500 outline-none transition-all duration-150 ease-linear hover:bg-red-500 hover:text-white focus:outline-none active:bg-red-600"
               type="button"
               @click="closeModal()"
             >
               Close
             </button>
             <button
-              class="background-transparent mr-1 mb-1 px-6 py-2 text-sm font-bold uppercase text-red-500 outline-none transition-all duration-150 ease-linear focus:outline-none"
+              class="background-transparent mb-1 mr-1 px-6 py-2 text-sm font-bold uppercase text-red-500 outline-none transition-all duration-150 ease-linear focus:outline-none"
               type="button"
               @click="confirmModal()"
             >

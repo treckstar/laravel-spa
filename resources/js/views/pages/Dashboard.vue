@@ -11,7 +11,7 @@
           <div
             class="rounded bg-white p-4 dark:bg-slate-800 dark:text-gray-300"
           >
-            <h1 class="mt-4 mb-4 text-center text-2xl">
+            <h1 class="mb-4 mt-4 text-center text-2xl">
               {{ greeting() }},
               {{ user && user.name ? user.name : 'Registered User' }}!
             </h1>
@@ -31,7 +31,7 @@
                   class="rounded-lg bg-slate-100 p-10 text-center text-gray-600 transition duration-200 ease-in-out hover:bg-slate-200 hover:text-gray-800 dark:bg-slate-900 hover:dark:bg-slate-700 hover:dark:text-white"
                 >
                   <div>
-                    <PowerIcon class="ml-auto mr-auto mb-4 h-12 w-12" />
+                    <PowerIcon class="mb-4 ml-auto mr-auto h-12 w-12" />
                   </div>
                   <h2 class="text-lg">
                     No applications are integrated into your account.
@@ -53,7 +53,7 @@
                       class="mb-1 w-full rounded-lg border border-gray-200 bg-white shadow-md hover:bg-gray-50 dark:border-gray-900 dark:bg-gray-900 hover:dark:bg-slate-700"
                     >
                       <div
-                        class="flex flex-col items-center pt-4 pb-4 pl-2 pr-2"
+                        class="flex flex-col items-center pb-4 pl-2 pr-2 pt-4"
                       >
                         <span
                           class="fa-4x mb-2"
@@ -99,7 +99,7 @@
           </div>
         </div>
 
-        <div class="mt-3 mb-5 p-5 text-center">
+        <div class="mb-5 mt-3 p-5 text-center">
           <GHButtons
             show-follow
             show-star

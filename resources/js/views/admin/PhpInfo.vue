@@ -38,7 +38,7 @@
 
     <div v-if="!dataReady">
       <div class="text-gray-700 dark:text-gray-100">
-        <div class="pt-10 pb-10 text-center">
+        <div class="pb-10 pt-10 text-center">
           <span class="fa fa-circle-notch fa-spin fa-5x" />
         </div>
       </div>

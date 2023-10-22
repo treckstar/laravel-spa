@@ -180,7 +180,7 @@
                 :to="{ name: 'admin' }"
               >
                 <span
-                  class="flex items-center rounded-t p-4 pr-10 pl-8 hover:bg-slate-800 hover:text-white"
+                  class="flex items-center rounded-t p-4 pl-8 pr-10 hover:bg-slate-800 hover:text-white"
                   :class="
                     isActive
                       ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
@@ -197,7 +197,7 @@
                 :to="{ name: 'dashboard' }"
               >
                 <span
-                  class="flex items-center p-4 pr-10 pl-8 hover:bg-slate-800 hover:text-white"
+                  class="flex items-center p-4 pl-8 pr-10 hover:bg-slate-800 hover:text-white"
                   :class="
                     isActive
                       ? roles && (roles.admin || roles.superAdmin)
@@ -219,7 +219,7 @@
                 :to="{ name: 'settings' }"
               >
                 <span
-                  class="flex items-center p-4 pr-10 pl-8 hover:bg-slate-800 hover:text-white"
+                  class="flex items-center p-4 pl-8 pr-10 hover:bg-slate-800 hover:text-white"
                   :class="
                     isActive
                       ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
@@ -232,7 +232,7 @@
               </router-link>
 
               <div
-                class="flex cursor-pointer items-center rounded-b p-4 pr-10 pl-8 text-gray-700 hover:bg-slate-800 hover:text-white"
+                class="flex cursor-pointer items-center rounded-b p-4 pl-8 pr-10 text-gray-700 hover:bg-slate-800 hover:text-white"
                 @click.prevent="logout(), closeDrop()"
               >
                 <ArrowLeftOnRectangleIcon
@@ -296,7 +296,7 @@
         <div
           class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 dark:divide-gray-700 dark:bg-slate-900"
         >
-          <div class="px-5 pt-5 pb-6">
+          <div class="px-5 pb-6 pt-5">
             <div class="flex items-center justify-between">
               <div>
                 <!-- <img class="h-8 w-auto" :src="logo" :alt="appName" /> -->
@@ -327,7 +327,7 @@
               </div>
             </div>
           </div>
-          <div class="space-y-6 py-6 px-5">
+          <div class="space-y-6 px-5 py-6">
             <div class="">
               <div
                 v-if="
@@ -430,7 +430,7 @@
 
               <div
                 v-if="authenticated && user"
-                class="mr-2 mb-10"
+                class="mb-10 mr-2"
                 :class="
                   loading ? 'default disabled cursor-pointer' : 'cursor-pointer'
                 "
@@ -468,7 +468,7 @@
                   class="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-200"
                   @click="leaveImpersonating(), close()"
                 >
-                  <span class="fa-solid fa-user-secret fa-fw mr-2 ml-1" />
+                  <span class="fa-solid fa-user-secret fa-fw ml-1 mr-2" />
                   Return to your account
                 </div>
               </div>

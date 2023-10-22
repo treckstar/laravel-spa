@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { mapState, mapActions, mapGetters } from 'vuex';
-import { track } from '@services/analytics';
+import '@services/analytics';
 
 export default {
   name: 'AccountPrivacy',

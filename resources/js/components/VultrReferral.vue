@@ -13,7 +13,7 @@
         <img
           :src="referralImage"
           alt="Vultr Hosting Services"
-          class="ml-auto mr-auto mb-4 rounded-t"
+          class="mb-4 ml-auto mr-auto rounded-t"
           style="width: 100%; max-width: 300px"
         />
         <h2
@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts">
-import { track } from '@services/analytics';
+import '@services/analytics';
 import vultr1 from '@img/vendor-logos/vultr-1.webp';
 import vultr2 from '@img/vendor-logos/vultr-2.png';
 

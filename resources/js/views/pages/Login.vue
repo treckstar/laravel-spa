@@ -67,7 +67,7 @@
                 <input
                   id="exampleCheck2"
                   type="checkbox"
-                  class="form-check-input float-left mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-blue-600 checked:bg-blue-600 focus:outline-none"
+                  class="form-check-input float-left mr-2 mt-1 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-blue-600 checked:bg-blue-600 focus:outline-none"
                 />
                 <label
                   class="form-check-label mt-1 inline-block cursor-pointer text-gray-800 dark:text-gray-100"
@@ -102,7 +102,7 @@
                 </template>
               </AppButton>
 
-              <p class="mt-4 mb-0 pt-1 text-sm">
+              <p class="mb-0 mt-4 pt-1 text-sm">
                 <span
                   class="mr-2 cursor-default text-gray-700 dark:text-gray-300"
                 >

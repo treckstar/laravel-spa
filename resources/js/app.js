@@ -13,7 +13,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { ServerTable, ClientTable, EventBus } from 'v-tables-3';
 import VueGtag from 'vue-gtag-next';
 import * as Sentry from '@sentry/vue';
-import { BrowserTracing } from '@sentry/tracing';
+import { BrowserTracing } from '@sentry/browser';
 import { registerSW } from 'virtual:pwa-register';
 import VueSecureHTML from 'vue-html-secure';
 import KonamiCode from 'vue-konami-code';

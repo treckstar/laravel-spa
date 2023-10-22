@@ -3,7 +3,7 @@
   <!-- you will need to add a little "X" button next to the logo in order to close it though -->
   <div
     id="main-nav"
-    class="fixed z-30 h-screen w-1/2 border-r bg-white dark:bg-slate-800 md:top-0 md:left-0 md:w-1/3 lg:block lg:w-64"
+    class="fixed z-30 h-screen w-1/2 border-r bg-white dark:bg-slate-800 md:left-0 md:top-0 md:w-1/3 lg:block lg:w-64"
     :class="sideBarOpen ? '' : 'hidden'"
   >
     <div class="mb-8 flex h-20 w-full items-center border-b px-4">
@@ -43,7 +43,7 @@
               : 'cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700'
           "
         >
-          <BuildingLibraryIcon class="mr-2 mb-1 h-6 w-6" />
+          <BuildingLibraryIcon class="mb-1 mr-2 h-6 w-6" />
           <span class="">Admin</span>
         </div>
       </router-link>
@@ -62,7 +62,7 @@
               : 'cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700'
           "
         >
-          <UsersIcon class="mr-2 mb-1 h-6 w-6" />
+          <UsersIcon class="mb-1 mr-2 h-6 w-6" />
           <span class="">Users</span>
         </div>
       </router-link>

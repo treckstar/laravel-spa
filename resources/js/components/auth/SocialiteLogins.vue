@@ -3,126 +3,126 @@
     <span
       v-if="logins.facebook == 1"
       v-tippy="'Facebook'"
-      class="fa-brands fa-square-facebook fa-3x mr-3 mb-2 cursor-pointer text-blue-500 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-blue-500 transition duration-300 cursor-pointer fa-brands fa-square-facebook fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('facebook')"
     />
     <span
       v-if="logins.twitter == 1"
       v-tippy="'Twitter'"
-      class="fa-brands fa-twitter fa-3x mr-3 mb-2 cursor-pointer text-blue-300 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-blue-300 transition duration-300 cursor-pointer fa-brands fa-twitter fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('twitter')"
     />
     <span
       v-if="logins.instagram == 1"
       v-tippy="'Instagram'"
-      class="fa-brands fa-instagram fa-3x mr-3 mb-2 cursor-pointer text-gray-700 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-gray-700 transition duration-300 cursor-pointer fa-brands fa-instagram fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('instagram')"
     />
     <span
       v-if="logins.github == 1"
       v-tippy="'GitHub'"
-      class="fa-brands fa-github fa-3x mr-3 mb-2 cursor-pointer text-gray-800 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-gray-800 transition duration-300 cursor-pointer fa-brands fa-github fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('github')"
     />
     <span
       v-if="logins.youtube == 1"
       v-tippy="'YouTube'"
-      class="fa-brands fa-youtube fa-3x mr-3 mb-2 cursor-pointer text-red-500 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-red-500 transition duration-300 cursor-pointer fa-brands fa-youtube fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('youtube')"
     />
     <span
       v-if="logins.google == 1"
       v-tippy="'Google'"
-      class="fa-brands fa-google fa-3x mr-3 mb-2 cursor-pointer text-red-500 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-red-500 transition duration-300 cursor-pointer fa-brands fa-google fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('google')"
     />
     <span
       v-if="logins.linkedin == 1"
       v-tippy="'LinkedIn'"
-      class="fa-brands fa-linkedin fa-3x mr-3 mb-2 cursor-pointer text-blue-700 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-blue-700 transition duration-300 cursor-pointer fa-brands fa-linkedin fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('linkedin')"
     />
     <span
       v-if="logins.twitch == 1"
       v-tippy="'Twitch'"
-      class="fa-brands fa-twitch fa-3x mr-3 mb-2 cursor-pointer text-blue-600 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-blue-600 transition duration-300 cursor-pointer fa-brands fa-twitch fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('twitch')"
     />
     <span
       v-if="logins.apple == 1"
       v-tippy="'Apple'"
-      class="fa-brands fa-apple fa-3x mr-3 mb-2 cursor-pointer text-gray-800 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-gray-800 transition duration-300 cursor-pointer fa-brands fa-apple fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('apple')"
     />
     <span
       v-if="logins.microsoft == 1"
       v-tippy="'Microsoft'"
-      class="fa-brands fa-microsoft fa-3x mr-3 mb-2 cursor-pointer text-blue-300 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-blue-300 transition duration-300 cursor-pointer fa-brands fa-microsoft fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('microsoft')"
     />
     <span
       v-if="logins.tiktok == 1"
       v-tippy="'TikTok'"
-      class="fa-brands fa-tiktok fa-3x mr-3 mb-2 cursor-pointer text-pink-600 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-pink-600 transition duration-300 cursor-pointer fa-brands fa-tiktok fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('tiktok')"
     />
     <span
       v-if="logins.zoho == 1"
       v-tippy="'Zoho'"
-      class="fas fa-z fa-3x mr-3 mb-2 cursor-pointer text-yellow-500 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-yellow-500 transition duration-300 cursor-pointer fas fa-z fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('zoho')"
     />
     <span
       v-if="logins.stackexchange == 1"
       v-tippy="'StackExchange'"
-      class="fa-brands fa-stack-exchange fa-3x mr-3 mb-2 cursor-pointer text-blue-400 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-blue-400 transition duration-300 cursor-pointer fa-brands fa-stack-exchange fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('stackexchange')"
     />
     <span
       v-if="logins.gitlab == 1"
       v-tippy="'GitLab'"
-      class="fa-brands fa-square-gitlab fa-3x mr-3 mb-2 cursor-pointer text-orange-400 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-orange-400 transition duration-300 cursor-pointer fa-brands fa-square-gitlab fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('gitlab')"
     />
     <span
       v-if="logins.reddit == 1"
       v-tippy="'GitLab'"
-      class="fa-brands fa-square-reddit fa-3x mr-3 mb-2 cursor-pointer text-orange-700 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-orange-700 transition duration-300 cursor-pointer fa-brands fa-square-reddit fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('reddit')"
     />
     <span
       v-if="logins.snapchat == 1"
       v-tippy="'Snapchat'"
-      class="fa-brands fa-square-snapchat fa-3x mr-3 mb-2 cursor-pointer text-yellow-400 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-yellow-400 transition duration-300 cursor-pointer fa-brands fa-square-snapchat fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('snapchat')"
     />
     <span
       v-if="logins.meetup == 1"
       v-tippy="'Meetup'"
-      class="fa-brands fa-meetup fa-3x mr-3 mb-2 cursor-pointer text-red-400 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-red-400 transition duration-300 cursor-pointer fa-brands fa-meetup fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('meetup')"
     />
     <span
       v-if="logins.atlassian == 1"
       v-tippy="'Atlassian'"
-      class="fa-brands fa-atlassian fa-3x mr-3 mb-2 cursor-pointer text-blue-800 opacity-80 transition duration-300 hover:opacity-100"
+      class="mb-2 mr-3 text-blue-800 transition duration-300 cursor-pointer fa-brands fa-atlassian fa-3x opacity-80 hover:opacity-100"
       :class="loading ? 'disabled opacity-40' : ''"
       @click="socialiteLogin('atlassian')"
     />
@@ -136,7 +136,7 @@ import * as Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import { mapGetters, mapActions } from 'vuex';
-import { track } from '@services/analytics';
+import '@services/analytics';
 
 export default {
   name: 'SocialiteLogins',

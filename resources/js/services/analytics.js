@@ -1,13 +1,12 @@
 /* eslint-disable */
 
-// import { track } from '@services/analytics';
-export function track(
+export default function (
   action,
   category = 'click event',
   label = 'clicked',
   value = 1,
 ) {
-  let appGaEnabled = GA_ENABLED; // eslint-disable-line
+  let appGaEnabled = false; // eslint-disable-line
   if (appGaEnabled) {
     this.$gtag.event(action, {
       event_category: category,

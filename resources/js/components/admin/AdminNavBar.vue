@@ -175,7 +175,7 @@
           :to="{ name: 'admin' }"
         >
           <span
-            class="flex items-center rounded-t p-4 pr-10 pl-8 hover:bg-slate-800 hover:text-white"
+            class="flex items-center rounded-t p-4 pl-8 pr-10 hover:bg-slate-800 hover:text-white"
             :class="
               isActive
                 ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
@@ -192,7 +192,7 @@
           :to="{ name: 'dashboard' }"
         >
           <span
-            class="flex items-center p-4 pr-10 pl-8 hover:bg-slate-800 hover:text-white"
+            class="flex items-center p-4 pl-8 pr-10 hover:bg-slate-800 hover:text-white"
             :class="
               isActive
                 ? roles && (roles.admin || roles.superAdmin)
@@ -214,7 +214,7 @@
           :to="{ name: 'settings' }"
         >
           <span
-            class="flex items-center p-4 pr-10 pl-8 hover:bg-slate-800 hover:text-white"
+            class="flex items-center p-4 pl-8 pr-10 hover:bg-slate-800 hover:text-white"
             :class="
               isActive
                 ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
@@ -227,7 +227,7 @@
         </router-link>
 
         <div
-          class="flex cursor-pointer items-center rounded-b p-4 pr-10 pl-8 text-gray-700 hover:bg-slate-800 hover:text-white"
+          class="flex cursor-pointer items-center rounded-b p-4 pl-8 pr-10 text-gray-700 hover:bg-slate-800 hover:text-white"
           @click.prevent="logout"
         >
           <ArrowLeftOnRectangleIcon

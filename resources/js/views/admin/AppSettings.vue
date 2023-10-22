@@ -38,7 +38,7 @@
 
     <div v-if="!dataReady">
       <div class="text-gray-700 dark:text-gray-100">
-        <div class="pt-10 pb-10 text-center">
+        <div class="pb-10 pt-10 text-center">
           <span class="fa fa-circle-notch fa-spin fa-5x" />
         </div>
       </div>
@@ -102,7 +102,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableFbLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -117,7 +117,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appFbSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -133,7 +133,7 @@
                 />
                 <div
                   v-if="setting.key == 'appFbRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -156,7 +156,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableTwitterLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -171,7 +171,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appTwitterSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -187,7 +187,7 @@
                 />
                 <div
                   v-if="setting.key == 'appTwitterRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -210,7 +210,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableGoogleLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -225,7 +225,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appGoogleSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -241,7 +241,7 @@
                 />
                 <div
                   v-if="setting.key == 'appGoogleRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -264,7 +264,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableInstagramLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -279,7 +279,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appInstagramSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -295,7 +295,7 @@
                 />
                 <div
                   v-if="setting.key == 'appInstagramRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -318,7 +318,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableGitHubLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -333,7 +333,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appGitHubSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -349,7 +349,7 @@
                 />
                 <div
                   v-if="setting.key == 'appGitHubRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -373,7 +373,7 @@
 
                 <AppSettingToggle
                   v-if="setting.key == 'enableLinkedInLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -388,7 +388,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appLinkedInSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -404,7 +404,7 @@
                 />
                 <div
                   v-if="setting.key == 'appLinkedInRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -428,7 +428,7 @@
 
                 <AppSettingToggle
                   v-if="setting.key == 'enableTwitchLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -443,7 +443,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appTwitchSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -459,7 +459,7 @@
                 />
                 <div
                   v-if="setting.key == 'appTwitchRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -482,7 +482,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableYouTubeLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -497,7 +497,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appYouTubeSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -513,7 +513,7 @@
                 />
                 <div
                   v-if="setting.key == 'appYouTubeRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -536,7 +536,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableAppleLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -551,7 +551,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appAppleSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -591,7 +591,7 @@
                 />
                 <div
                   v-if="setting.key == 'appAppleRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -614,7 +614,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableMicrosoftLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -629,7 +629,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appMicrosoftSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -645,7 +645,7 @@
                 />
                 <div
                   v-if="setting.key == 'appMicrosoftRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -668,7 +668,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableTikTokLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -683,7 +683,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appTikTokSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -699,7 +699,7 @@
                 />
                 <div
                   v-if="setting.key == 'appTikTokRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -734,7 +734,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableZoHoLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -749,7 +749,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appZoHoSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -765,7 +765,7 @@
                 />
                 <div
                   v-if="setting.key == 'appZoHoRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -788,7 +788,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableStackExchangeLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -819,7 +819,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appStackExchangeSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -835,7 +835,7 @@
                 />
                 <div
                   v-if="setting.key == 'appStackExchangeRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -858,7 +858,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableGitLabLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -873,7 +873,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appGitLabSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -889,7 +889,7 @@
                 />
                 <div
                   v-if="setting.key == 'appGitLabRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -912,7 +912,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableRedditLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -927,7 +927,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appRedditSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -935,7 +935,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appRedditResponseType'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -943,7 +943,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appRedditState'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -959,7 +959,7 @@
                 />
                 <div
                   v-if="setting.key == 'appRedditRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -982,7 +982,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableSnapchatLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -997,7 +997,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appSnapchatSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -1013,7 +1013,7 @@
                 />
                 <div
                   v-if="setting.key == 'appSnapchatRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -1036,7 +1036,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableMeetupLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -1051,7 +1051,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appMeetupSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -1067,7 +1067,7 @@
                 />
                 <div
                   v-if="setting.key == 'appMeetupRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -1090,7 +1090,7 @@
                 </div>
                 <AppSettingToggle
                   v-if="setting.key == 'enableAtlassianLogin'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   @update-setting="appSettingUpdateTriggered"
@@ -1105,7 +1105,7 @@
                 />
                 <AppSettingTextInput
                   v-if="setting.key == 'appAtlassianSecret'"
-                  class="ml-8 mr-5 mb-3"
+                  class="mb-3 ml-8 mr-5"
                   :setting="setting"
                   :loading="loading"
                   :disabled="!dataReady"
@@ -1121,7 +1121,7 @@
                 />
                 <div
                   v-if="setting.key == 'appAtlassianRedirect'"
-                  class="ml-8 mr-5 mt-4 mb-5 border border-b-slate-300"
+                  class="mb-5 ml-8 mr-5 mt-4 border border-b-slate-300"
                 />
               </div>
 
@@ -1149,7 +1149,7 @@
               </div>
               <AppSettingToggle
                 v-if="setting.key == 'enableGoogleAnalytics'"
-                class="ml-8 mr-5 mb-3"
+                class="mb-3 ml-8 mr-5"
                 :setting="setting"
                 :loading="loading"
                 @update-setting="appSettingUpdateTriggered"
@@ -1202,7 +1202,7 @@
 
               <AppSettingToggle
                 v-if="setting.key == 'enableSentryMonitoring'"
-                class="ml-8 mr-5 mb-3"
+                class="mb-3 ml-8 mr-5"
                 :setting="setting"
                 :loading="loading"
                 @update-setting="appSettingUpdateTriggered"
@@ -1210,7 +1210,7 @@
 
               <AppSettingToggle
                 v-if="setting.key == 'enableSentryMonitoringFeedbakForm'"
-                class="ml-8 mr-5 mb-3"
+                class="mb-3 ml-8 mr-5"
                 :setting="setting"
                 :loading="loading"
                 @update-setting="appSettingUpdateTriggered"
@@ -1229,7 +1229,7 @@
                 v-if="setting.key == 'sentryIoDSN' && sentryEnabled"
                 secondary
                 text="Throw Test Error"
-                class="ml-8 mr-5 mb-3 mt-4"
+                class="mb-3 ml-8 mr-5 mt-4"
                 @click="throwTestError"
               />
             </div>
@@ -1310,7 +1310,7 @@
                 <div class="mr-3 w-full sm:flex sm:items-center">
                   <AppSettingToggle
                     v-if="setting.key == 'enableKonamiAsteroids'"
-                    class="ml-8 mr-5 mb-3 cursor-pointer"
+                    class="mb-3 ml-8 mr-5 cursor-pointer"
                     :setting="setting"
                     :loading="loading"
                     @update-setting="appSettingUpdateTriggered"
@@ -1333,7 +1333,7 @@
                 <div class="mr-3 w-full sm:flex sm:items-center">
                   <AppSettingToggle
                     v-if="setting.key == 'enableKonamiToasty'"
-                    class="ml-8 mr-5 mb-3"
+                    class="mb-3 ml-8 mr-5"
                     :setting="setting"
                     :loading="loading"
                     @update-setting="appSettingUpdateTriggered"
@@ -1363,7 +1363,7 @@
 import { ChevronRightIcon } from '@heroicons/vue/24/outline';
 import { mapGetters, mapActions } from 'vuex';
 import axios from 'axios';
-import { track } from '@services/analytics';
+import '@services/analytics';
 import AppSettingToggle from '@components/form/AppSettingToggle.vue';
 import AppSettingTextInput from '@components/form/AppSettingTextInput.vue';
 import AppSettingTextarea from '@components/form/AppSettingTextarea.vue';

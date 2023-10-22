@@ -24,7 +24,7 @@ import { dependencies } from './package.json';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 
 const routes = () =>
-  import(/* webpackChunkName: "jsRoutes" */ 'resources/js/router/routes.js');
+  import(/* webpackChunkName: "jsRoutes" */ './resources/js/router/routes.js');
 
 const fs = require('node:fs');
 
@@ -373,7 +373,7 @@ export default ({ mode }) => {
       SentryPlugin,
       InspectPlugin,
       VisualizerPlugin,
-      // basicSsl(),
+      basicSsl(),
     ],
     sourcemap: true,
     server: devServer,

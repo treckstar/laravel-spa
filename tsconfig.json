@@ -1,17 +1,23 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "resources/js/**/*", "resources/js/**/*.vue"],
   "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "noImplicitThis": true,
+    "strict": true,
+    "isolatedModules": true,
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./resources/js/*"]
     },
-    "types": ["vite-plugin-pwa/client"]
+    "types": ["node", "vite-plugin-pwa/client"]
   },
-
-  "references": [
-    {
-      "path": "./tsconfig.vite-config.json"
-    }
-  ]
+  "include": ["env.d.ts", "resources/js/**/*", "resources/js/**/*.vue"]
 }

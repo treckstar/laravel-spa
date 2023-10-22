@@ -69,7 +69,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import { track } from '@services/analytics';
+import '@services/analytics';
 
 const GITHUB_BASE_URL = 'https://github.com';
 
