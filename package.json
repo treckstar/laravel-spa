@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite --mode=development --host",
-        "build": "vite build || echo \"build failed\" && exit 1",
+        "build": "vite build",
         "preview": "vite preview",
         "optimize": "vite optimize",
         "lint": "eslint --fix resources/js/ --ext .js,.vue",
