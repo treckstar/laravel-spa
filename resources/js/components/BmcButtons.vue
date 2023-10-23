@@ -190,7 +190,7 @@
 </template>
 
 <script>
-import '@services/analytics';
+import { track } from '@services/analytics';
 
 export default {
   name: 'BmcButtons',

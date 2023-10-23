@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-export default function (
+export function track(
   action,
   category = 'click event',
   label = 'clicked',
@@ -15,3 +15,5 @@ export default function (
     });
   }
 }
+
+export default track;

@@ -266,7 +266,7 @@
 
 <script lang="ts">
 import { mapGetters } from 'vuex';
-import '@services/analytics';
+import { track } from '@services/analytics';
 import GithubButton from 'vue-github-button';
 // https://buttons.github.io/
 

@@ -40,3 +40,4 @@ yarn-error.log
 /storage/framework/views/*
 docker-compose.override.yml
 npm-bundle-stats.html
+.vercel

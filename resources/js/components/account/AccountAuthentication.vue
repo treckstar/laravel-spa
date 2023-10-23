@@ -103,7 +103,7 @@ import * as Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import { mapState, mapActions, mapGetters } from 'vuex';
-import '@services/analytics';
+import { track } from '@services/analytics';
 import { PowerIcon } from '@heroicons/vue/24/outline';
 import {
   parseDisplayDate,

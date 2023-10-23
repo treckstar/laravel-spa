@@ -63,7 +63,7 @@
 
 <script lang="ts">
 import { mapState, mapActions, mapGetters } from 'vuex';
-import '@services/analytics';
+import { track } from '@services/analytics';
 import { ContentLoader } from 'vue-content-loader';
 
 export default {

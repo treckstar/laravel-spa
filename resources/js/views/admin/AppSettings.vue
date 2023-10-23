@@ -1363,7 +1363,7 @@
 import { ChevronRightIcon } from '@heroicons/vue/24/outline';
 import { mapGetters, mapActions } from 'vuex';
 import axios from 'axios';
-import '@services/analytics';
+import { track } from '@services/analytics';
 import AppSettingToggle from '@components/form/AppSettingToggle.vue';
 import AppSettingTextInput from '@components/form/AppSettingTextInput.vue';
 import AppSettingTextarea from '@components/form/AppSettingTextarea.vue';

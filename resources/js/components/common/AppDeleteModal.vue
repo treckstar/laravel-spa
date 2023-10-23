@@ -74,7 +74,7 @@
 </template>
 
 <script lang="ts">
-import '@services/analytics';
+import { track } from '@services/analytics';
 import { ExclamationTriangleIcon } from '@heroicons/vue/24/outline';
 
 export default {

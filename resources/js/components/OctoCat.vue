@@ -6,7 +6,6 @@
     class="github-corner"
     :class="position"
     aria-label="View on GitHub"
-    @click="track(`OctoCat clicked`)"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +68,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import '@services/analytics';
+import { track } from '@services/analytics';
 
 const GITHUB_BASE_URL = 'https://github.com';
 
@@ -195,9 +194,6 @@ export default {
     relAttr() {
       return this.blank ? 'noopener noreferrer' : null;
     },
-  },
-  methods: {
-    track,
   },
 };
 </script>

@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts">
-import '@services/analytics';
+import { track } from '@services/analytics';
 import vultr1 from '@img/vendor-logos/vultr-1.webp';
 import vultr2 from '@img/vendor-logos/vultr-2.png';
 

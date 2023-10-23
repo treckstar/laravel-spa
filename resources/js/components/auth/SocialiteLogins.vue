@@ -136,7 +136,7 @@ import * as Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import { mapGetters, mapActions } from 'vuex';
-import '@services/analytics';
+import { track } from '@services/analytics';
 
 export default {
   name: 'SocialiteLogins',

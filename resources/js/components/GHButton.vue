@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts">
-import '@services/analytics';
+import { track } from '@services/analytics';
 import GithubButton from 'vue-github-button';
 
 export default {

@@ -103,7 +103,7 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import '@services/analytics';
+import { track } from '@services/analytics';
 import {
   ShieldExclamationIcon,
   CircleStackIcon,

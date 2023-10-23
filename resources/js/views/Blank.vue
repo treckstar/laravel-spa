@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { mapState, mapActions, mapGetters } from 'vuex';
-import '@services/analytics';
+import { track } from '@services/analytics';
 
 export default {
   name: 'Blank',
