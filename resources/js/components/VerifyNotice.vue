@@ -8,8 +8,8 @@
           loading
             ? 'Resending verification email to ' + user.email
             : sent
-            ? 'A verification has been sent. Please check your mail inbox!'
-            : 'Your email address is not verified. please check your mail inbox!'
+              ? 'A verification has been sent. Please check your mail inbox!'
+              : 'Your email address is not verified. please check your mail inbox!'
         }}
       </div>
       <AppButton

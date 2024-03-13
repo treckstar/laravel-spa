@@ -80,8 +80,8 @@ function le() {
       e >= 0 && e <= 12
         ? 'Good Morning'
         : e > 12 && e <= 18
-        ? 'Good Afternoon'
-        : 'Good Evening'),
+          ? 'Good Afternoon'
+          : 'Good Evening'),
     t
   );
 }
@@ -89,42 +89,42 @@ function de(e = null) {
   return 'apple' == e.toLowerCase()
     ? 'fa-brands fa-apple text-gray-800 dark:text-gray-200'
     : 'twitter' == e.toLowerCase()
-    ? 'fa-brands fa-twitter text-blue-300 dark:text-blue-200'
-    : 'google' == e.toLowerCase()
-    ? 'fa-brands fa-google text-red-500 dark:text-gray-200'
-    : 'microsoft' == e.toLowerCase()
-    ? 'fa-brands fa-microsoft text-blue-300 dark:text-gray-200'
-    : 'tiktok' == e.toLowerCase()
-    ? 'fa-brands fa-tiktok text-pink-600 dark:text-gray-200'
-    : 'youtube' == e.toLowerCase()
-    ? 'fa-brands fa-youtube text-red-600 dark:text-gray-200'
-    : 'instagram' == e.toLowerCase()
-    ? 'fa-brands fa-instagram text-gray-800 dark:text-gray-200'
-    : 'facebook' == e.toLowerCase()
-    ? 'fa-brands fa-facebook text-blue-600 dark:text-gray-200'
-    : 'github' == e.toLowerCase()
-    ? 'fa-brands fa-github text-gray-700 dark:text-gray-200'
-    : 'twitch' == e.toLowerCase()
-    ? 'fa-brands fa-twitch text-blue-300 dark:text-gray-200'
-    : 'linkedin' == e.toLowerCase()
-    ? 'fa-brands fa-linkedin text-blue-900 dark:text-gray-200'
-    : 'zoho' == e.toLowerCase()
-    ? 'fas fa-z text-yellow-500 dark:text-gray-200'
-    : 'stackexchange' == e.toLowerCase()
-    ? 'fa-brands fa-stack-exchange text-blue-400 dark:text-gray-200'
-    : 'gitlab' == e.toLowerCase()
-    ? 'fa-brands fa-square-gitlab text-orange-400 dark:text-gray-200'
-    : 'reddit' == e.toLowerCase()
-    ? 'fa-brands fa-square-reddit text-orange-700 dark:text-gray-200'
-    : 'snapchat' == e.toLowerCase()
-    ? 'fa-brands fa-square-snapchat text-yellow-400 dark:text-gray-200'
-    : 'meetup' == e.toLowerCase()
-    ? 'fa-brands fa-meetup text-red-400 dark:text-gray-200'
-    : 'bitbucket' == e.toLowerCase()
-    ? 'fa-brands fa-bitbucket text-blue-800 dark:text-gray-200'
-    : 'atlassian' == e.toLowerCase()
-    ? 'fa-brands fa-atlassian text-blue-800 dark:text-gray-200'
-    : 'fa-solid fa-plug-circle-check text-gray-600 dark:text-gray-200';
+      ? 'fa-brands fa-twitter text-blue-300 dark:text-blue-200'
+      : 'google' == e.toLowerCase()
+        ? 'fa-brands fa-google text-red-500 dark:text-gray-200'
+        : 'microsoft' == e.toLowerCase()
+          ? 'fa-brands fa-microsoft text-blue-300 dark:text-gray-200'
+          : 'tiktok' == e.toLowerCase()
+            ? 'fa-brands fa-tiktok text-pink-600 dark:text-gray-200'
+            : 'youtube' == e.toLowerCase()
+              ? 'fa-brands fa-youtube text-red-600 dark:text-gray-200'
+              : 'instagram' == e.toLowerCase()
+                ? 'fa-brands fa-instagram text-gray-800 dark:text-gray-200'
+                : 'facebook' == e.toLowerCase()
+                  ? 'fa-brands fa-facebook text-blue-600 dark:text-gray-200'
+                  : 'github' == e.toLowerCase()
+                    ? 'fa-brands fa-github text-gray-700 dark:text-gray-200'
+                    : 'twitch' == e.toLowerCase()
+                      ? 'fa-brands fa-twitch text-blue-300 dark:text-gray-200'
+                      : 'linkedin' == e.toLowerCase()
+                        ? 'fa-brands fa-linkedin text-blue-900 dark:text-gray-200'
+                        : 'zoho' == e.toLowerCase()
+                          ? 'fas fa-z text-yellow-500 dark:text-gray-200'
+                          : 'stackexchange' == e.toLowerCase()
+                            ? 'fa-brands fa-stack-exchange text-blue-400 dark:text-gray-200'
+                            : 'gitlab' == e.toLowerCase()
+                              ? 'fa-brands fa-square-gitlab text-orange-400 dark:text-gray-200'
+                              : 'reddit' == e.toLowerCase()
+                                ? 'fa-brands fa-square-reddit text-orange-700 dark:text-gray-200'
+                                : 'snapchat' == e.toLowerCase()
+                                  ? 'fa-brands fa-square-snapchat text-yellow-400 dark:text-gray-200'
+                                  : 'meetup' == e.toLowerCase()
+                                    ? 'fa-brands fa-meetup text-red-400 dark:text-gray-200'
+                                    : 'bitbucket' == e.toLowerCase()
+                                      ? 'fa-brands fa-bitbucket text-blue-800 dark:text-gray-200'
+                                      : 'atlassian' == e.toLowerCase()
+                                        ? 'fa-brands fa-atlassian text-blue-800 dark:text-gray-200'
+                                        : 'fa-solid fa-plug-circle-check text-gray-600 dark:text-gray-200';
 }
 const ce = (e, t) => {
     const a = e.__vccOpts || e;
@@ -716,12 +716,12 @@ const me = ce(ue, [
                                                                   ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
                                                                   : 'cursor-default whitespace-nowrap rounded-t bg-slate-500 text-white'
                                                                 : g.roles &&
-                                                                  (g.roles
-                                                                    .admin ||
-                                                                    g.roles
-                                                                      .superAdmin)
-                                                                ? 'text-gray-700'
-                                                                : 'rounded-t text-gray-700',
+                                                                    (g.roles
+                                                                      .admin ||
+                                                                      g.roles
+                                                                        .superAdmin)
+                                                                  ? 'text-gray-700'
+                                                                  : 'rounded-t text-gray-700',
                                                             ],
                                                           },
                                                           [
@@ -2126,10 +2126,10 @@ const me = ce(ue, [
                                                 ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
                                                 : 'cursor-default whitespace-nowrap rounded-t bg-slate-500 text-white'
                                               : g.roles &&
-                                                (g.roles.admin ||
-                                                  g.roles.superAdmin)
-                                              ? 'text-gray-700'
-                                              : 'rounded-t text-gray-700',
+                                                  (g.roles.admin ||
+                                                    g.roles.superAdmin)
+                                                ? 'text-gray-700'
+                                                : 'rounded-t text-gray-700',
                                           ],
                                         },
                                         [
@@ -2147,9 +2147,10 @@ const me = ce(ue, [
                                           ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
                                           : 'cursor-default whitespace-nowrap rounded-t bg-slate-500 text-white'
                                         : g.roles &&
-                                          (g.roles.admin || g.roles.superAdmin)
-                                        ? 'text-gray-700'
-                                        : 'rounded-t text-gray-700',
+                                            (g.roles.admin ||
+                                              g.roles.superAdmin)
+                                          ? 'text-gray-700'
+                                          : 'rounded-t text-gray-700',
                                       'flex items-center p-4 pr-10 pl-8 hover:bg-slate-800 hover:text-white',
                                     ])}"${r}>`,
                                   ),
@@ -3595,8 +3596,8 @@ const we = ce(ke, [
           g.loading
             ? 'Resending verification email to ' + t.user.email
             : g.sent
-            ? 'A verification has been sent. Please check your mail inbox!'
-            : 'Your email address is not verified. please check your mail inbox!',
+              ? 'A verification has been sent. Please check your mail inbox!'
+              : 'Your email address is not verified. please check your mail inbox!',
         )}</div>`,
       ),
         s(
@@ -3623,8 +3624,8 @@ const we = ce(ke, [
                           g.loading
                             ? 'Sending'
                             : g.sent
-                            ? 'Email Sent!'
-                            : 'Resend link?',
+                              ? 'Email Sent!'
+                              : 'Resend link?',
                         ),
                       1,
                     ),
@@ -3637,8 +3638,8 @@ const we = ce(ke, [
                       g.loading
                         ? 'Sending'
                         : g.sent
-                        ? 'Email Sent!'
-                        : 'Resend link?',
+                          ? 'Email Sent!'
+                          : 'Resend link?',
                     )}`,
                   );
               }),
@@ -4460,24 +4461,24 @@ const Ue = Ne,
             ? (e +=
                 '\n          text-white\n          dark:text-white\n          bg-indigo-600\n          hover:bg-indigo-900\n          dark:bg-indigo-600\n          dark:hover:bg-indigo-400\n          border-indigo-600\n          hover:border-indigo-900\n          dark:border-indigo-600\n          dark:hover:border-indigo-400\n          border-1\n          border\n        ')
             : this.secondary
-            ? (e +=
-                '\n          text-white\n          dark:text-white\n          bg-slate-600\n          hover:bg-slate-900\n          dark:bg-slate-600\n          dark:hover:bg-slate-400\n          border-slate-600\n          hover:border-slate-900\n          dark:border-slate-600\n          dark:hover:border-slate-400\n          border-1\n          border\n        ')
-            : this.info
-            ? (e +=
-                '\n          text-white\n          dark:text-white\n          bg-blue-600\n          hover:bg-blue-900\n          dark:bg-blue-600\n          dark:hover:bg-blue-400\n          border-blue-600\n          hover:border-blue-900\n          dark:border-blue-600\n          dark:hover:border-blue-400\n          border-1\n          border\n        ')
-            : this.accent
-            ? (e +=
-                '\n          text-white\n          dark:text-white\n          bg-teal-600\n          hover:bg-teal-900\n          dark:bg-teal-600\n          dark:hover:bg-teal-400\n          border-teal-600\n          hover:border-teal-900\n          dark:border-teal-600\n          dark:hover:border-teal-400\n          border-1\n          border\n        ')
-            : this.success
-            ? (e +=
-                '\n          text-white\n          dark:text-white\n          bg-green-600\n          hover:bg-green-900\n          dark:bg-green-600\n          dark:hover:bg-green-400\n          border-green-600\n          hover:border-green-900\n          dark:border-green-600\n          dark:hover:border-green-400\n          border-1\n          border\n        ')
-            : this.warning
-            ? (e +=
-                '\n          text-white\n          dark:text-white\n          bg-yellow-600\n          hover:bg-yellow-900\n          dark:bg-yellow-600\n          dark:hover:bg-yellow-400\n          border-yellow-600\n          hover:border-yellow-900\n          dark:border-yellow-600\n          dark:hover:border-yellow-400\n          border-1\n          border\n        ')
-            : this.danger
-            ? (e +=
-                '\n          text-white\n          dark:text-white\n          bg-red-600\n          hover:bg-red-900\n          dark:bg-red-600\n          dark:hover:bg-red-400\n          border-red-600\n          hover:border-red-900\n          dark:border-red-600\n          dark:hover:border-red-400\n          border-1\n          border\n        ')
-            : (this.transparent, (e += '')),
+              ? (e +=
+                  '\n          text-white\n          dark:text-white\n          bg-slate-600\n          hover:bg-slate-900\n          dark:bg-slate-600\n          dark:hover:bg-slate-400\n          border-slate-600\n          hover:border-slate-900\n          dark:border-slate-600\n          dark:hover:border-slate-400\n          border-1\n          border\n        ')
+              : this.info
+                ? (e +=
+                    '\n          text-white\n          dark:text-white\n          bg-blue-600\n          hover:bg-blue-900\n          dark:bg-blue-600\n          dark:hover:bg-blue-400\n          border-blue-600\n          hover:border-blue-900\n          dark:border-blue-600\n          dark:hover:border-blue-400\n          border-1\n          border\n        ')
+                : this.accent
+                  ? (e +=
+                      '\n          text-white\n          dark:text-white\n          bg-teal-600\n          hover:bg-teal-900\n          dark:bg-teal-600\n          dark:hover:bg-teal-400\n          border-teal-600\n          hover:border-teal-900\n          dark:border-teal-600\n          dark:hover:border-teal-400\n          border-1\n          border\n        ')
+                  : this.success
+                    ? (e +=
+                        '\n          text-white\n          dark:text-white\n          bg-green-600\n          hover:bg-green-900\n          dark:bg-green-600\n          dark:hover:bg-green-400\n          border-green-600\n          hover:border-green-900\n          dark:border-green-600\n          dark:hover:border-green-400\n          border-1\n          border\n        ')
+                    : this.warning
+                      ? (e +=
+                          '\n          text-white\n          dark:text-white\n          bg-yellow-600\n          hover:bg-yellow-900\n          dark:bg-yellow-600\n          dark:hover:bg-yellow-400\n          border-yellow-600\n          hover:border-yellow-900\n          dark:border-yellow-600\n          dark:hover:border-yellow-400\n          border-1\n          border\n        ')
+                      : this.danger
+                        ? (e +=
+                            '\n          text-white\n          dark:text-white\n          bg-red-600\n          hover:bg-red-900\n          dark:bg-red-600\n          dark:hover:bg-red-400\n          border-red-600\n          hover:border-red-900\n          dark:border-red-600\n          dark:hover:border-red-400\n          border-1\n          border\n        ')
+                        : (this.transparent, (e += '')),
           e
         );
       },

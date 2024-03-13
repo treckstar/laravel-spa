@@ -199,8 +199,8 @@
                   ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
                   : 'cursor-default whitespace-nowrap rounded-t bg-slate-500 text-white'
                 : roles && (roles.admin || roles.superAdmin)
-                ? 'text-gray-700'
-                : 'rounded-t text-gray-700'
+                  ? 'text-gray-700'
+                  : 'rounded-t text-gray-700'
             "
           >
             <HomeIcon class="mr-2 h-6 w-6" />

@@ -75,17 +75,17 @@ const y = {
               icon: 'error',
             }))
           : s.response && 401 === s.response.status
-          ? ((this.errors = { message: s.response.data.message }),
-            this.popToast({
-              message: 'Invalid Email',
-              timer: 1e4,
-              icon: 'error',
-            }))
-          : this.popToast({
-              message: 'An error occured',
-              timer: 1e4,
-              icon: 'error',
-            }),
+            ? ((this.errors = { message: s.response.data.message }),
+              this.popToast({
+                message: 'Invalid Email',
+                timer: 1e4,
+                icon: 'error',
+              }))
+            : this.popToast({
+                message: 'An error occured',
+                timer: 1e4,
+                icon: 'error',
+              }),
           (this.loading = !1);
       }
     },

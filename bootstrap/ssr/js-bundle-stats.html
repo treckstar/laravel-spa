@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -271,14 +271,20 @@
                 null == (k = l[h]) || 'boolean' == typeof k
                   ? null
                   : 'string' == typeof k ||
-                    'number' == typeof k ||
-                    'bigint' == typeof k
-                  ? v$1(null, k, null, null, k)
-                  : Array.isArray(k)
-                  ? v$1(p$1, { children: k }, null, null, null)
-                  : k.__b > 0
-                  ? v$1(k.type, k.props, k.key, k.ref ? k.ref : null, k.__v)
-                  : k)
+                      'number' == typeof k ||
+                      'bigint' == typeof k
+                    ? v$1(null, k, null, null, k)
+                    : Array.isArray(k)
+                      ? v$1(p$1, { children: k }, null, null, null)
+                      : k.__b > 0
+                        ? v$1(
+                            k.type,
+                            k.props,
+                            k.key,
+                            k.ref ? k.ref : null,
+                            k.__v,
+                          )
+                        : k)
             ) {
               if (
                 ((k.__ = u),
@@ -356,8 +362,8 @@
                 null == u
                   ? ''
                   : 'number' != typeof u || c$1.test(l)
-                  ? u
-                  : u + 'px');
+                    ? u
+                    : u + 'px');
         }
         function H(n, l, u, i, t) {
           var o;
@@ -682,10 +688,10 @@
               !o && t
                 ? [t]
                 : r
-                ? null
-                : i.firstChild
-                ? n.call(i.childNodes)
-                : null,
+                  ? null
+                  : i.firstChild
+                    ? n.call(i.childNodes)
+                    : null,
               e,
               !o && t ? t : r ? r.__e : i.firstChild,
               o,
@@ -4143,24 +4149,24 @@
           return a == null || b == null
             ? NaN
             : a < b
-            ? -1
-            : a > b
-            ? 1
-            : a >= b
-            ? 0
-            : NaN;
+              ? -1
+              : a > b
+                ? 1
+                : a >= b
+                  ? 0
+                  : NaN;
         }
 
         function descending(a, b) {
           return a == null || b == null
             ? NaN
             : b < a
-            ? -1
-            : b > a
-            ? 1
-            : b >= a
-            ? 0
-            : NaN;
+              ? -1
+              : b > a
+                ? 1
+                : b >= a
+                  ? 0
+                  : NaN;
         }
 
         function bisector(f) {
@@ -5270,54 +5276,54 @@
               l === 6
                 ? rgbn(m) // #ff0000
                 : l === 3
-                ? new Rgb(
-                    ((m >> 8) & 0xf) | ((m >> 4) & 0xf0),
-                    ((m >> 4) & 0xf) | (m & 0xf0),
-                    ((m & 0xf) << 4) | (m & 0xf),
-                    1,
-                  ) // #f00
-                : l === 8
-                ? rgba(
-                    (m >> 24) & 0xff,
-                    (m >> 16) & 0xff,
-                    (m >> 8) & 0xff,
-                    (m & 0xff) / 0xff,
-                  ) // #ff000000
-                : l === 4
-                ? rgba(
-                    ((m >> 12) & 0xf) | ((m >> 8) & 0xf0),
-                    ((m >> 8) & 0xf) | ((m >> 4) & 0xf0),
-                    ((m >> 4) & 0xf) | (m & 0xf0),
-                    (((m & 0xf) << 4) | (m & 0xf)) / 0xff,
-                  ) // #f000
-                : null) // invalid hex
+                  ? new Rgb(
+                      ((m >> 8) & 0xf) | ((m >> 4) & 0xf0),
+                      ((m >> 4) & 0xf) | (m & 0xf0),
+                      ((m & 0xf) << 4) | (m & 0xf),
+                      1,
+                    ) // #f00
+                  : l === 8
+                    ? rgba(
+                        (m >> 24) & 0xff,
+                        (m >> 16) & 0xff,
+                        (m >> 8) & 0xff,
+                        (m & 0xff) / 0xff,
+                      ) // #ff000000
+                    : l === 4
+                      ? rgba(
+                          ((m >> 12) & 0xf) | ((m >> 8) & 0xf0),
+                          ((m >> 8) & 0xf) | ((m >> 4) & 0xf0),
+                          ((m >> 4) & 0xf) | (m & 0xf0),
+                          (((m & 0xf) << 4) | (m & 0xf)) / 0xff,
+                        ) // #f000
+                      : null) // invalid hex
             : (m = reRgbInteger.exec(format))
-            ? new Rgb(m[1], m[2], m[3], 1) // rgb(255, 0, 0)
-            : (m = reRgbPercent.exec(format))
-            ? new Rgb(
-                (m[1] * 255) / 100,
-                (m[2] * 255) / 100,
-                (m[3] * 255) / 100,
-                1,
-              ) // rgb(100%, 0%, 0%)
-            : (m = reRgbaInteger.exec(format))
-            ? rgba(m[1], m[2], m[3], m[4]) // rgba(255, 0, 0, 1)
-            : (m = reRgbaPercent.exec(format))
-            ? rgba(
-                (m[1] * 255) / 100,
-                (m[2] * 255) / 100,
-                (m[3] * 255) / 100,
-                m[4],
-              ) // rgb(100%, 0%, 0%, 1)
-            : (m = reHslPercent.exec(format))
-            ? hsla(m[1], m[2] / 100, m[3] / 100, 1) // hsl(120, 50%, 50%)
-            : (m = reHslaPercent.exec(format))
-            ? hsla(m[1], m[2] / 100, m[3] / 100, m[4]) // hsla(120, 50%, 50%, 1)
-            : named.hasOwnProperty(format)
-            ? rgbn(named[format]) // eslint-disable-line no-prototype-builtins
-            : format === 'transparent'
-            ? new Rgb(NaN, NaN, NaN, 0)
-            : null;
+              ? new Rgb(m[1], m[2], m[3], 1) // rgb(255, 0, 0)
+              : (m = reRgbPercent.exec(format))
+                ? new Rgb(
+                    (m[1] * 255) / 100,
+                    (m[2] * 255) / 100,
+                    (m[3] * 255) / 100,
+                    1,
+                  ) // rgb(100%, 0%, 0%)
+                : (m = reRgbaInteger.exec(format))
+                  ? rgba(m[1], m[2], m[3], m[4]) // rgba(255, 0, 0, 1)
+                  : (m = reRgbaPercent.exec(format))
+                    ? rgba(
+                        (m[1] * 255) / 100,
+                        (m[2] * 255) / 100,
+                        (m[3] * 255) / 100,
+                        m[4],
+                      ) // rgb(100%, 0%, 0%, 1)
+                    : (m = reHslPercent.exec(format))
+                      ? hsla(m[1], m[2] / 100, m[3] / 100, 1) // hsl(120, 50%, 50%)
+                      : (m = reHslaPercent.exec(format))
+                        ? hsla(m[1], m[2] / 100, m[3] / 100, m[4]) // hsla(120, 50%, 50%, 1)
+                        : named.hasOwnProperty(format)
+                          ? rgbn(named[format]) // eslint-disable-line no-prototype-builtins
+                          : format === 'transparent'
+                            ? new Rgb(NaN, NaN, NaN, 0)
+                            : null;
         }
 
         function rgbn(n) {
@@ -5534,10 +5540,10 @@
             (h < 60
               ? m1 + ((m2 - m1) * h) / 60
               : h < 180
-              ? m2
-              : h < 240
-              ? m1 + ((m2 - m1) * (240 - h)) / 60
-              : m1) * 255
+                ? m2
+                : h < 240
+                  ? m1 + ((m2 - m1) * (240 - h)) / 60
+                  : m1) * 255
           );
         }
 
@@ -5939,12 +5945,14 @@
             if ((bs = bm.index) > bi) {
               // a string precedes the next number in b
               bs = b.slice(bi, bs);
-              if (s[i]) s[i] += bs; // coalesce with previous string
+              if (s[i])
+                s[i] += bs; // coalesce with previous string
               else s[++i] = bs;
             }
             if ((am = am[0]) === (bm = bm[0])) {
               // numbers in a & b match
-              if (s[i]) s[i] += bm; // coalesce with previous string
+              if (s[i])
+                s[i] += bm; // coalesce with previous string
               else s[++i] = bm;
             } else {
               // interpolate non-matching numbers
@@ -5957,7 +5965,8 @@
           // Add remains of b.
           if (bi < b.length) {
             bs = b.slice(bi);
-            if (s[i]) s[i] += bs; // coalesce with previous string
+            if (s[i])
+              s[i] += bs; // coalesce with previous string
             else s[++i] = bs;
           }
 
@@ -5982,22 +5991,22 @@
             : (t === 'number'
                 ? interpolateNumber
                 : t === 'string'
-                ? (c = color(b))
-                  ? ((b = c), rgb)
-                  : string
-                : b instanceof color
-                ? rgb
-                : b instanceof Date
-                ? date
-                : isNumberArray(b)
-                ? numberArray
-                : Array.isArray(b)
-                ? genericArray
-                : (typeof b.valueOf !== 'function' &&
-                    typeof b.toString !== 'function') ||
-                  isNaN(b)
-                ? object
-                : interpolateNumber)(a, b);
+                  ? (c = color(b))
+                    ? ((b = c), rgb)
+                    : string
+                  : b instanceof color
+                    ? rgb
+                    : b instanceof Date
+                      ? date
+                      : isNumberArray(b)
+                        ? numberArray
+                        : Array.isArray(b)
+                          ? genericArray
+                          : (typeof b.valueOf !== 'function' &&
+                                typeof b.toString !== 'function') ||
+                              isNaN(b)
+                            ? object
+                            : interpolateNumber)(a, b);
         }
 
         function interpolateRound(a, b) {
@@ -6443,12 +6452,12 @@
           return i === n
             ? coefficient
             : i > n
-            ? coefficient + new Array(i - n + 1).join('0')
-            : i > 0
-            ? coefficient.slice(0, i) + '.' + coefficient.slice(i)
-            : '0.' +
-              new Array(1 - i).join('0') +
-              formatDecimalParts(x, Math.max(0, p + i - 1))[0]; // less than 1y!
+              ? coefficient + new Array(i - n + 1).join('0')
+              : i > 0
+                ? coefficient.slice(0, i) + '.' + coefficient.slice(i)
+                : '0.' +
+                  new Array(1 - i).join('0') +
+                  formatDecimalParts(x, Math.max(0, p + i - 1))[0]; // less than 1y!
         }
 
         function formatRounded(x, p) {
@@ -6459,11 +6468,11 @@
           return exponent < 0
             ? '0.' + new Array(-exponent).join('0') + coefficient
             : coefficient.length > exponent + 1
-            ? coefficient.slice(0, exponent + 1) +
-              '.' +
-              coefficient.slice(exponent + 1)
-            : coefficient +
-              new Array(exponent - coefficient.length + 2).join('0');
+              ? coefficient.slice(0, exponent + 1) +
+                '.' +
+                coefficient.slice(exponent + 1)
+              : coefficient +
+                new Array(exponent - coefficient.length + 2).join('0');
         }
 
         var formatTypes = {
@@ -6560,14 +6569,14 @@
                 symbol === '$'
                   ? currencyPrefix
                   : symbol === '#' && /[boxX]/.test(type)
-                  ? '0' + type.toLowerCase()
-                  : '',
+                    ? '0' + type.toLowerCase()
+                    : '',
               suffix =
                 symbol === '$'
                   ? currencySuffix
                   : /[%p]/.test(type)
-                  ? percent
-                  : '';
+                    ? percent
+                    : '';
 
             // What format function should we use?
             // Is this an integer type?
@@ -6583,8 +6592,8 @@
               precision === undefined
                 ? 6
                 : /[gprs]/.test(type)
-                ? Math.max(1, Math.min(21, precision))
-                : Math.max(0, Math.min(20, precision));
+                  ? Math.max(1, Math.min(21, precision))
+                  : Math.max(0, Math.min(20, precision));
 
             function format(value) {
               var valuePrefix = prefix,
@@ -6621,8 +6630,8 @@
                       ? sign
                       : minus
                     : sign === '-' || sign === '('
-                    ? ''
-                    : sign) + valuePrefix;
+                      ? ''
+                      : sign) + valuePrefix;
                 valueSuffix =
                   (type === 's' ? prefixes[8 + prefixExponent / 3] : '') +
                   valueSuffix +
@@ -6954,12 +6963,12 @@
               return !isFinite(step) || !(step > 0)
                 ? null
                 : !(step > 1)
-                ? interval
-                : interval.filter(
-                    field
-                      ? (d) => field(d) % step === 0
-                      : (d) => interval.count(0, d) % step === 0,
-                  );
+                  ? interval
+                  : interval.filter(
+                      field
+                        ? (d) => field(d) % step === 0
+                        : (d) => interval.count(0, d) % step === 0,
+                    );
             };
           }
 

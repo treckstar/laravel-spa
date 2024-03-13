@@ -79,17 +79,17 @@ const b = {
               icon: 'error',
             }))
           : s.response && 401 === s.response.status
-          ? ((this.errors = { message: s.response.data.message }),
-            this.popToast({
-              message: 'Unauthorized',
-              timer: 1e4,
-              icon: 'error',
-            }))
-          : this.popToast({
-              message: 'An error occured',
-              timer: 1e4,
-              icon: 'error',
-            }),
+            ? ((this.errors = { message: s.response.data.message }),
+              this.popToast({
+                message: 'Unauthorized',
+                timer: 1e4,
+                icon: 'error',
+              }))
+            : this.popToast({
+                message: 'An error occured',
+                timer: 1e4,
+                icon: 'error',
+              }),
           (this.loading = !1);
       }
     },

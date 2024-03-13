@@ -174,8 +174,8 @@
                   ? 'Creating'
                   : 'Create'
                 : submitting
-                ? 'Updating'
-                : 'Update'
+                  ? 'Updating'
+                  : 'Update'
             }}
             <span v-if="submitting" class="fa fa-circle-notch fa-spin ml-3" />
           </template>
