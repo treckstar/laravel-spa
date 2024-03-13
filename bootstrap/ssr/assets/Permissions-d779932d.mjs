@@ -768,8 +768,8 @@ const L = {
                                           ? 'Creating'
                                           : 'Create'
                                         : i.submitting
-                                        ? 'Updating'
-                                        : 'Update',
+                                          ? 'Updating'
+                                          : 'Update',
                                     ) + ' ',
                                     1,
                                   ),
@@ -831,8 +831,8 @@ const L = {
                                             ? 'Creating'
                                             : 'Create'
                                           : i.submitting
-                                          ? 'Updating'
-                                          : 'Update',
+                                            ? 'Updating'
+                                            : 'Update',
                                       ) + ' ',
                                       1,
                                     ),
@@ -852,8 +852,8 @@ const L = {
                                         ? 'Creating'
                                         : 'Create'
                                       : i.submitting
-                                      ? 'Updating'
-                                      : 'Update',
+                                        ? 'Updating'
+                                        : 'Update',
                                   )} `,
                                 ),
                                   i.submitting
@@ -1180,8 +1180,8 @@ const L = {
       t
         ? ((this.rowsUnlocked = []), this.rowsUnlocked.push(e.id))
         : s
-        ? (this.rowsUnlocked = this.rowsUnlocked.filter((t) => t != e.id))
-        : this.rowsUnlocked.push(e.id);
+          ? (this.rowsUnlocked = this.rowsUnlocked.filter((t) => t != e.id))
+          : this.rowsUnlocked.push(e.id);
     },
     locked(e) {
       return !this.rowsUnlocked.find((t) => t == e.id);

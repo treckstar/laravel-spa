@@ -121,8 +121,8 @@ export default [
       {
         path: 'phpinfo',
         name: 'phpinfo',
-        component: defineAsyncComponent(() =>
-          import('@/views/admin/PhpInfo.vue'),
+        component: defineAsyncComponent(
+          () => import('@/views/admin/PhpInfo.vue'),
         ),
       },
       {

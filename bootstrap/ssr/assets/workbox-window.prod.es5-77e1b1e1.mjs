@@ -301,9 +301,9 @@ var u = (function (e) {
                         'Map' === r || 'Set' === r
                           ? Array.from(n)
                           : 'Arguments' === r ||
-                            /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)
-                          ? e(n, t)
-                          : void 0
+                              /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)
+                            ? e(n, t)
+                            : void 0
                       );
                     }
                   })(n)) ||

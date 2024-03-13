@@ -491,9 +491,9 @@ const j = N(U, [
                                     ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
                                     : 'cursor-default whitespace-nowrap rounded-t bg-slate-500 text-white'
                                   : e.roles &&
-                                    (e.roles.admin || e.roles.superAdmin)
-                                  ? 'text-gray-700'
-                                  : 'rounded-t text-gray-700',
+                                      (e.roles.admin || e.roles.superAdmin)
+                                    ? 'text-gray-700'
+                                    : 'rounded-t text-gray-700',
                               ],
                             },
                             [w(p, { class: 'mr-2 h-6 w-6' }), k(' Dashboard ')],
@@ -507,8 +507,8 @@ const j = N(U, [
                               ? 'cursor-default whitespace-nowrap bg-slate-500 text-white'
                               : 'cursor-default whitespace-nowrap rounded-t bg-slate-500 text-white'
                             : e.roles && (e.roles.admin || e.roles.superAdmin)
-                            ? 'text-gray-700'
-                            : 'rounded-t text-gray-700',
+                              ? 'text-gray-700'
+                              : 'rounded-t text-gray-700',
                           'flex items-center p-4 pr-10 pl-8 hover:bg-slate-800 hover:text-white',
                         ])}"${s}>`,
                       ),

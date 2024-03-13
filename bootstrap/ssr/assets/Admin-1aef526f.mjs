@@ -72,8 +72,8 @@ const E = {
           a >= 0 && a <= 12
             ? 'Good Morning'
             : a > 12 && a <= 18
-            ? 'Good Afternoon'
-            : 'Good Evening'),
+              ? 'Good Afternoon'
+              : 'Good Evening'),
         e
       );
     },
